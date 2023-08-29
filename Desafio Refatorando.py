@@ -9,6 +9,19 @@ from bardapi.constants import SESSION_HEADERS
 
 token = "insira seu token"
 
+# Carreguando os valores dos cookies a partir de um arquivo JSON
+cookie_dict = {
+    "__Secure-1PSID": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__Secure-1PSIDTS": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__Secure-1PSIDCC": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
+
+
+# biblioteca requests para definir os cookies na sessão
+session = requests.Session()
+for cookie_name, cookie_value in cookie_dict.items():
+    session.cookies.set(cookie_name, cookie_value)
+
 
 # instância da classe Bard com a sessão contendo os cookies
 bard = Bard(token=token, session=session)
