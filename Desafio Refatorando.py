@@ -3,7 +3,6 @@ from bardapi import Bard
 import requests
 import json
 from bardapi.constants import SESSION_HEADERS
-#from bardapi import BardCookies
 
 
 # Definindo o valor do token
