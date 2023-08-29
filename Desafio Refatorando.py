@@ -8,7 +8,7 @@ from bardapi.constants import SESSION_HEADERS
 
 # Definindo o valor do token
 
-token = "aQgVs0Xv7gO_xUjYbTLbZEabDTAv0N7dqHZKxrotsBzBXjb7HZW1zPci4jO7bKPg_vHrhA."
+token = "insira seu token"
 
 
 # instância da classe Bard com a sessão contendo os cookies
